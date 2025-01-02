@@ -536,7 +536,7 @@ SSL_CTX *create_ssl_context_from_options(struct us_socket_context_options_t opti
 
 /* Returns a servername's userdata if any */
 void *us_internal_ssl_socket_context_find_server_name_userdata(struct us_internal_ssl_socket_context_t *context, const char *hostname_pattern) {
-    printf("finding %s\n", hostname_pattern);
+    //printf("finding %s\n", hostname_pattern);
     
     /* We can use sni_find because looking up a "wildcard pattern" will match the exact literal "wildcard pattern" first,
      * before it matches by the very wildcard itself, so it works fine (exact match is the only thing we care for here) */
